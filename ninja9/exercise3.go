@@ -16,6 +16,6 @@ func main() {
 		fmt.Println(x)
 		wg.Done()
 	}()
-	wg.Done()
+	wg.Wait()
 	fmt.Println(x)
 }
